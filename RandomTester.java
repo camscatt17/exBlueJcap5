@@ -38,4 +38,10 @@ public class RandomTester
             System.out.println(r.nextInt());
         }
     }
+    
+    public void throwDice (int howMany){
+        for(int i = 0; i<howMany; i++){
+            System.out.println((1 + r.nextInt(6)));
+        }
+    }
 }
