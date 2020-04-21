@@ -11,6 +11,9 @@
  * @author     Michael Kolling and David J. Barnes
  * @version    0.1
  */
+
+import java.util.Locale;
+
 public class SupportSystem
 {
     private InputReader reader;
@@ -38,7 +41,8 @@ public class SupportSystem
 
         while(!finished) {
             String input = reader.getInput().trim();
-
+            input = input.toLowerCase(Locale.ROOT);
+            
             if(input.startsWith("bye")) {
                 finished = true;
             }
