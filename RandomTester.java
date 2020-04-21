@@ -44,4 +44,14 @@ public class RandomTester
             System.out.println((1 + r.nextInt(6)));
         }
     }
+    
+    public int maxInclus (int max){
+       System.out.println(1+r.nextInt(max));
+       return 1 + r.nextInt(max);
+    }
+    
+    public int maxMin (int max, int min){
+        System.out.println(min + maxInclus(max-min));
+        return (min + maxInclus(max-min));
+    }
 }
