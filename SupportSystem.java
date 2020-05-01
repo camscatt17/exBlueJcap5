@@ -12,7 +12,7 @@
  * @version    0.1
  */
 
-import java.util.Locale;
+import java.util.HashSet;
 
 public class SupportSystem
 {
@@ -40,8 +40,7 @@ public class SupportSystem
         printWelcome();
 
         while(!finished) {
-            String input = reader.getInput().trim();
-            input = input.toLowerCase(Locale.ROOT);
+            HashSet<String> input = reader.getInput();
             
             if(input.equals("bye")){
                 finished = true;

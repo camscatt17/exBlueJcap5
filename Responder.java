@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 
 
 public class Responder
@@ -41,7 +43,7 @@ public class Responder
        return resposta.get(i);
     }
     
-    public String generateResponse(String word)
+    public String generateResponse(HashSet<String> word)
     {
        String response = responseMap.get(word);
        if(response!= null){
