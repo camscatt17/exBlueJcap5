@@ -42,7 +42,7 @@ public class SupportSystem
         while(!finished) {
             HashSet<String> input = reader.getInput();
             
-            if(input.equals("bye")){
+            if(input.contains("bye")){
                 finished = true;
             }
             else {

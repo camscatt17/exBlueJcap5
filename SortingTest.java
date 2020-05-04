@@ -1,8 +1,8 @@
 
 /**
- * Escreva a descrição da classe SortingTest aqui.
+ * Classe que exemplifica o exercicio 5.37
  * 
- * @author (seu nome) 
+ * @CamilaSantos (seu nome) 
  * @version (número de versão ou data)
  */
 
@@ -13,7 +13,7 @@ import java.util.Iterator;
 
 public class SortingTest
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
+    //Uma lista de inteiros
     private List <Integer> teste;
 
     /**
@@ -27,12 +27,7 @@ public class SortingTest
         
     }
 
-    /**
-     * Exemplo de método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   exemplo de um parâmetro de método
-     * @return     a soma de x com y 
-     */
+   
     public List<Integer> preencher(){
         teste.add(4);
         teste.add(9);
@@ -48,6 +43,13 @@ public class SortingTest
         
         return teste;
     }
+    
+     /**
+     * Método que aceita um array de valores int como parâmetro e imprime os calores em ordem crescente
+     * 
+     * @param  List<E> lista 
+     * @return     void
+     */
     
     public void receiveAndPrint(List<Integer> lista)
     {

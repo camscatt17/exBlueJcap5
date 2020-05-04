@@ -43,15 +43,17 @@ public class Responder
        return resposta.get(i);
     }
     
-    public String generateResponse(HashSet<String> word)
+    public String generateResponse(HashSet<String> words)
     {
-       String response = responseMap.get(word);
-       if(response!= null){
-           return response;
-        }
-        else{
-            return getResponse();
-        }
+       Iterator<String> it = words.iterator();
+       while(it.hasNext()){
+           String word = it.next();
+           String response = responseMap.get(word);
+           if(response != null){
+               return response;
+            }
+       }
+       return getResponse();
     }
     
     public void fillResponses(){
